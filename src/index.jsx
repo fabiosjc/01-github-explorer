@@ -1,5 +1,2 @@
 import React from 'react'
-
-function App() {
-  return <h1>Hello React</h1>
-}
+import { App } from './App'
