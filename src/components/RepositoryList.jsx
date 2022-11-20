@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import RepositoryItem from "./RepositoryItem";
+import RepositoryItem from './RepositoryItem';
 
 import '../styles/repositories.scss'
 
@@ -8,7 +8,7 @@ export function RepositoryList() {
 
   useEffect(() => {
     fetch('https://api.github.com/users/fabiosjc/repos')
-      .then(respose => respose.json())
+      .then(response => response.json())
       .then(data => setRepos(data))
   }, [])
 
